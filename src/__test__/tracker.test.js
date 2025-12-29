@@ -543,39 +543,39 @@ describe('unregisterListeners', () => {
 
     shakaTracker.unregisterListeners();
 
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'pause',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'ended',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'play',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'loadedmetadata',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'loadeddata',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'loadstart',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'playing',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'seeking',
       expect.any(Function)
     );
-    expect(shakaTracker.tag.addEventListener).toHaveBeenCalledWith(
+    expect(shakaTracker.tag.removeEventListener).toHaveBeenCalledWith(
       'error',
       expect.any(Function)
     );
